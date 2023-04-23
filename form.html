@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <fieldset>
+      <legend>Users details!</legend>
+        <form action="">
+            <label for="name">Please enter your Name: </label>  
+         <input type="text" id="name"  name="username" >
+         <br>
+         <label for="comment">please enter your comment:</label>
+         <textarea name="usercomment" id="comment" cols="20" rows="5"  ></textarea>
+         <br>
+          <label for="dob">DOB:</label>
+          <input type="date" name="userdob" id="dob">
+          <br>
+          <label for="password">Enter your Password</label>
+          <input type="password" name="userpassword" id="password">
+          <br>
+          Select gender:
+          <label for="male">Male</label>
+          <input type="radio" name="usergender" id="male" value="male">
+          <label for="female">Female</label>
+          <input type="radio" name="usergender" id="female" value="female">
+          <br>
+          <hr>
+          Select Fav Movies:
+          <br>
+          <label for="avengers">Avengers</label>
+          <input type="checkbox" name="favmovies" id="avengers">
+           <br>
+          <label for="thor">Thor</label>
+          <input type="checkbox" name="favmovies" id="thor">
+          <br>
+          <label for="johnwick">JOhn Wick</label>
+          <input type="checkbox" name="favmovies" id="johnwick">
+          <br>
+          <label for="grayman">The Gray Man </label>
+          <input type="checkbox" name="favmovies" id="grayman">
+          <br>
+           <input type="submit" value="submit">
+        </form>
+
+    </fieldset>
+    <br>
+    <hr>
+             
+                  <!-- Registration Form  -->
+
+                  <fieldset>
+                    <legend>Registration Details!!</legend>
+                    <form method="get">
+
+                      <!-- post url mai data ko store nahi karta hain balki ek new body request banata hai  -->
+                    <form method="post" target="_blank" action="/signup">
+
+
+                        <label for="Name">Enter your Name :</label>
+                        <input type="text" name="username" id="Name">
+                        <br>
+                        <label for="email">Enter your Email :</label>
+                        <input type="email" name="username" id="email">
+                        <label for=""></label>
+                        <br>
+                        Select gender:
+                        <label for="male">Male</label>
+                        <input type="radio" name="usergender" id="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="usergender" id="female">
+                        <br>
+                        <label for="contactnum">Contact No :</label>
+                        <input type="number" name="userno" id="contactnum">
+                        <br>
+                        <label for="DOB">Enter your DOB :</label>
+                        <input type="date" name="userdob" id="DOB">
+                        <br>
+                        <label for="query">Enter your Query :</label>
+                        <textarea name="userquery" id="query" cols="20" rows="07"></textarea>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                  </fieldset>
+                            
+                   
+
+                   <!-- Extra Intput types in Form  -->
+
+                    <label for="Email">Enter your email</label>
+                    <input type="email" name="Useremail" id="Email" placeholder="a@exapmle.com" autofocus>
+                    <br>
+                    <label for="Num">Enter your No</label>
+                    <input type="number" name="usernum" id="Num" min="1">
+                    
+
+                               
+                   
+              
+
+
+</body>
+</html>

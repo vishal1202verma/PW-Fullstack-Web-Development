@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property </title>
+</head>
+<style>
+/* p{,  
+    display: inline;
+}
+span{
+    display: block;
+} */
+
+.in-block{
+    /* inline-block gives you power to chaonge height width margin and padding  */
+    /* display: inline-block;
+    width: 100px;
+    height: 230px;
+    color: #f36262; */
+
+}
+.width{
+    min-width:150px ;
+    border: 2px solid black;
+    color: #f04e4e;
+}
+.height{
+     min-height: 300px;
+    background-color:black;
+    color: red;
+
+}
+.hover:hover{
+  background-color: #f67c7c;
+  color: #f41d1d;
+}
+.input:focus{
+    color: #e93434;
+    background-color: black;
+    font-size: 20px;
+
+}
+a:hover{
+    color: #ff0000;
+
+}
+
+ /* When You click then it will work  */
+a:active{
+    color: #350707;
+}
+/* a:visited{
+    color: #000021;
+} */
+     
+         /* Psudo Element  */
+            
+.psudo-element::first-line{
+    color: #e75c73;
+    font-size: 20px;
+
+}
+.psudo-element::after{
+    content: "-VISHAL";
+    color: aqua;
+}
+.psudo-element::before{
+    content: "-VISHAL";
+    color: aqua;
+}
+.psudo-element::selection{
+    background-color:black;
+    color: yellow;
+}
+</style>
+<body>
+           <!-- Display Property  -->
+           <!-- p default bhevaour is block level  -->
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eum.</p>
+<hr>
+           <Span>
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+            Lorem ipsum dolor sit amet.
+           </Span>
+           <span>Lorem ipsum dolor sit amet consectetur adipisicing.
+            Lorem ipsum dolor sit, amet consectetur adipisicing.
+           </span>
+           <hr>
+           <p class="in-block">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero iste, nemo sapiente a consectetur perspiciatis earum eum sequi ratione!
+    
+           </p>
+           <br>
+           <hr>
+           
+
+           <!-- width -->
+          <p class="width">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, itaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis a necessitatibus et quas minus magni eligendi amet culpa beatae nulla alias error nisi provident molestiae, officiis illum quaerat corrupti?
+          </p>
+
+           <!-- height  -->
+          <p class="height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, fugiat possimus amet perspiciatis nisi nemo nam quam ipsum, ratione deleniti maiores? Id, iste? Deleniti et nobis quae magnam cumque asperiores? </p>
+
+
+                   <!-- psudo Class -->
+           <p class="hover">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, libero.
+           </p>
+ <br>
+ <hr>
+ <input type="text" class="input">
+ <br>
+ <a href="#">Click</a>
+ <br>
+ <hr>
+
+
+              <!-- Psudo Element  -->
+              <p class="psudo-element">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas cupiditate quod culpa dolores, veritatis deleniti est adipisci, nobis ad animi quibusdam quidem facere id dignissimos fugiat vitae impedit! Consequatur, ipsum.
+
+              </p>
+
+</body>
+</html>

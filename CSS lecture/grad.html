@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient </title>
+    <style>
+    .grad{
+        height: 500px;
+        /* background-image: linear-gradient(red, yellow); */
+        background-image:conic-gradient(red, yellow, black);
+    }
+        /* transition */
+    div{
+        height: 100px;
+        width: 100px;
+        background-color:red;
+        transition: width 2s, height 3s;
+        transition-timing-function:ease-in-out ;
+        transition-delay: 0.1s;
+
+    }
+    div:hover{
+        width: 200px;
+        height: 300px;
+    }
+
+          /* Animation  */
+  .animate{
+        height: 100px;
+        width: 100px;
+        background-color:red;
+        position: relative;     
+        animation-name: colorchange;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: 4;
+        animation-direction: alternate-reverse;
+        animation-fill-mode: forwards;
+  }
+   #ease{
+    animation-timing-function: ease;
+  }
+  #ease-in{
+    animation-timing-function: ease-in;
+  }
+  #ease-out{
+    animation-timing-function: ease-out;
+  }
+  #ease-in-out{
+    animation-timing-function: ease-in-out;
+  }
+
+  
+  @keyframes colorchange {
+    0%{
+        background-color:red;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: yellow;
+        top: 0px;
+        left: 200px;
+    
+    }
+    50%{
+        background-color:aqua;
+        top: 200px;
+        left: 200px;
+    }
+    75%{
+        background-color:rgb(18, 209, 63);
+        top: 200px;
+        right: 0px;
+    }
+    100%{
+        background-color: violet;
+        top: 0px;
+        left: 0px;
+    }
+  }
+  
+    </style>
+</head>
+<body>
+        <!-- Gradient  -->
+        <!-- <div class="grad">
+
+        </div> -->
+
+         <!-- Transition  -->
+         <div>
+          <p title="Hello Vishal">Lorem ipsum dolor sit amet.</p>
+         </div>
+
+
+                   <!-- Animation -->
+                   <div class="animate">
+                    <p>this going to animate</p>
+                </div>
+                <br>
+                    <div id="ease" class="animate">ease</div>
+                    <br>
+                    <div id="ease-in"class="animate">ease-in</div>
+                    <br>
+                    <div id="ease-out"class="animate">ease-out</div>
+                    <br>
+                    <div id="ease-in-out"class="animate">ease-in-out</div>
+
+
+</body>
+</html> 
+
+

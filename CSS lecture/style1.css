@@ -1,0 +1,19 @@
+    
+    /* Universal CSS  */
+
+*{
+padding: 0;
+margin: 0;
+font-family: 'Poppins', sans-serif;
+}
+
+/* Elementry CSS  */
+h1{
+    background-color: aqua;
+}
+p{
+    color: burlywood;
+}
+   
+
+

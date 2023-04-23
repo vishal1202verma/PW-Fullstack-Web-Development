@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: chartreuse;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h2{
+    text-align: center;
+    /* background-color: aqua; */
+    border: 2px solid black;
+    color: cadetblue;
+    /* border-radius: 4px; */
+    text-decoration: underline;
+    
+
+}
+p{
+    /* background-color: bisque; */
+    color: black;
+    text-align: center;
+    /* height: 90vh; */
+    font-size: 24px;
+}
+
