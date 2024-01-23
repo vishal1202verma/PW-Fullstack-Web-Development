@@ -1,0 +1,61 @@
+body{
+    background-color:rgb(43, 41, 41);
+    font-size: 2rem;
+    
+    color:white;
+
+}
+/* main{
+    background-color: palegreen;
+} */
+p{
+    background-color: black;
+    
+}
+.oppsite{
+    background-color: aqua
+    ;
+    color: red;
+    
+}
+nav ul{
+    padding: 0;
+    text-align: right;
+    margin: 0;
+
+}
+nav ul li {
+    /* background-color: red; */
+    display:inline-block;
+    margin: 12px 24px;
+    padding: 4px 8px;
+    
+}
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    list-style: none;
+
+}
+li a:hover, li a:focus{
+    color: white;
+    background-color:rgb(61, 59, 59);
+    text-decoration: underline;
+    
+}
+.block{
+    height: 15vw;
+    width: 15vw;
+    background-color: white;
+    /* color: black; */
+    padding: 1rem;
+    float: right;
+    margin-top: 200px;
+    margin-right: 250px;
+    display: flow-root;
+    border-radius: 50%;
+                         
+                
+}
+
+

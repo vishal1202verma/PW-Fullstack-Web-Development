@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(steelblue, rgb(233, 142, 243),whitesmoke) ;
+}
+.box{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 18px;
+    
+    
+}
+.container{
+    display:grid;
+    grid-template-columns: 200px 1fr 1fr;
+
+}
+.box:first-child{
+  background-color: aqua;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end:2;
+  border-radius: 0%;
+               
+  
+ 
+
+
+
+}
+
